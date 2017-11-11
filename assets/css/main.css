@@ -1782,8 +1782,15 @@
 	}
 
 		#highlights .highlight h3 {
-			color: #c46a6a;
+			color: #5ab47c;
 		}
+	
+		.highlight div {
+			width: 80%;
+			margin: auto;
+			text-align: left;
+		}
+
 
 /* Copyright */
 
@@ -1816,7 +1823,7 @@
 			body, input, select, textarea {
 				font-size: 13pt;
 				line-height: 1.75em;
-				letter-spacing: 0.025em;
+				/* letter-spacing: 0.025em; */
 			}
 
 			body {
@@ -2201,9 +2208,18 @@
 			#highlights .highlight h3 {
 				margin: 0 0 0.75em 0;
 				font-size: 1.15em;
-				letter-spacing: 0.05em;
+				/* letter-spacing: 0.05em; */
+				text-align: left;
 			}
 
+			#highlights .text {
+				width: 80%;
+				font-family: "Roboto Slab";
+			}
+
+			#highlights .project-photos {
+				
+			}
 		/* Main */
 
 			#main {
@@ -2215,6 +2231,8 @@
 				margin-top: 0;
 				margin-bottom: 0;
 			}
+
+
 
 		/* Footer */
 
