@@ -1361,7 +1361,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #7ad49c;
+			background-color: rgb(142, 187, 211);
 		}
 
 		input[type="button"].style1,
@@ -1369,7 +1369,7 @@
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #6ac48c url("images/overlay.png");
+			background: rgb(108, 153, 179) url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1378,7 +1378,7 @@
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: #7ad49c;
+				background-color: rgb(142, 187, 211);
 			}
 
 			input[type="button"].style1:active,
@@ -1489,6 +1489,8 @@
 	.feature-list h3 {
 		color: rgb(108, 153, 179) !important;
 		font-weight: 300;
+		text-align: center;
+		margin: auto;
 	}
 
 		.feature-list h3:before {
@@ -1498,13 +1500,13 @@
 			background: #2f333b url("images/overlay.png");
 			border-radius: 1em;
 			text-align: center;
-			margin: 0 0;
 		}
 	
 	.feature-list img {
 			width: 100px;
 			height: auto;
-			margin: 0 0;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 /* Icons */
@@ -1636,6 +1638,16 @@
 
 		#footer-wrapper h1, #footer-wrapper h2, #footer-wrapper h3, #footer-wrapper h4, #footer-wrapper h5, #footer-wrapper h6, #footer-wrapper strong, #footer-wrapper b, #footer-wrapper a {
 			color: #fff;
+		}
+
+		#footer-wrapper a {
+			text-decoration: underline;
+			color: rgb(108, 153, 179);
+		}
+
+		#footer-wrapper a:hover {
+			color: rgb(142, 187, 211);
+
 		}
 
 		#footer-wrapper hr {
@@ -1902,6 +1914,10 @@
 				text-align: center;
 			}
 
+			.feature-list img {
+				margin: auto;
+			}
+
 			.feature-list .row:first-child section {
 				padding-top: 0;
 				border-top: 0;
@@ -2009,7 +2025,7 @@
 			}
 
 			.homepage #header {
-				padding: 18em 0;
+				padding: 22em 0;
 			}
 
 		/* Logo */
@@ -2095,16 +2111,18 @@
 						}
 
 			.dropotron {
-				background: #222835 url("images/overlay.png");
-				background-color: rgba(44, 50, 63, 0.925);
+				/* background: url("images/overlay.png"); */
 				padding: 1.25em 1em 1.25em 1em;
 				border-radius: 0.35em;
 				box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-				min-width: 12em;
+				min-width: 10em;
 				text-align: left;
-				margin-top: -1.25em;
+				margin-top: -1.2em;
 				margin-left: -1px;
 			}
+				.dropotron img {
+					height: 30px;
+				}
 
 				.dropotron.level-0 {
 					margin-top: -1px;
