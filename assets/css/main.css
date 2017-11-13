@@ -1781,8 +1781,13 @@
 		text-align: center;
 	}
 
-		#highlights .highlight h3 {
-			color: #5ab47c;
+		#highlights .highlight h3 a {
+			color: rgba(92, 95, 103, 0.75);
+			text-decoration: underline;
+		}
+
+		#highlights .highlight a:hover {
+			color: rgba(92, 95, 103, 0.925);
 		}
 	
 		.highlight div {
@@ -2218,7 +2223,7 @@
 			}
 
 			#highlights .project-photos {
-
+				/* max-width: 400px; */
 			}
 		/* Main */
 
