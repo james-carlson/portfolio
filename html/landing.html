@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>James Carlson | Portfolio</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+:root {
+  --moz-main-gradient: -moz-radial-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+  --webkit-main-gradient: -webkit-radial-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  --main-gradient: radial-gradient(ellipse at center, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  --main-gradient-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+
+body {
+  background: #000;
+  font-family: 'Roboto Mono', monospace;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.curtain {
+  background-color: rgba(30,87,153,.1);
+/*   background: var(--moz-main-gradient);
+  background: var(--webkit-main-gradient);
+  background: var(--main-gradient); */
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  z-index: 3;
+  animation-name: curtain;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.j {
+  font-size: 70vh;
+  position: relative;
+  left: 3.9vh;
+  top: 3vh;
+}
+
+.j, .c {
+  font-weight: 800;
+  color: #fff;
+  animation-name: intro;
+  animation-duration: 1s;
+  z-index: 1;
+}
+
+.c {
+  position: absolute;
+  font-size: 60vh;
+  left: 33vh;
+  top: 25vh;
+}
+
+.gradient {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /*   background-color: #fff; */
+  background: var(--moz-main-gradient);
+  background: var(--webkit-main-gradient);
+  background: var(--main-gradient);
+  /* filter: var(--main-gradient-filter); */
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes intro {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes curtain {
+  from {transform: translateY(0vh);}
+  to {transform: translateY(-100vh);}
+}
+</style>
+<body>
+    <div class="gradient">
+        <div class="curtain"></div>
+          <span class="j">J</span>
+          <span class="c">C</span>
+      </div>
+</body>
+</html>
