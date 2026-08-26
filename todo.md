@@ -1,0 +1,3 @@
+- Now that vibe coding has lowered the cost of coding in time, the expectations for portfolios is likely going up.
+- I need to build a train that goes from brain to deployment.
+- Zero friction.
